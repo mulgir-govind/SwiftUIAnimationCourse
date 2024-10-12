@@ -11,8 +11,8 @@ class ChapterViewFactory {
     @ViewBuilder
     static func createView(for chapter: AnimationChapterModel) -> some View {
         switch chapter.type {
-            case .breathingCircles:
-                Text(chapter.title)
+            case .breathingAnimation:
+                BreathingAnimationExampleView()
         }
     }
 }

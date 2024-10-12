@@ -35,7 +35,7 @@ extension AppRouter {
             case .home:
                 HomeView()
             case .chapterDetail(let chapter):
-                Text(chapter.title)
+                ChapterViewFactory.createView(for: chapter)
         }
     }
 }

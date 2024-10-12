@@ -8,5 +8,5 @@
 import Foundation
 
 enum AnimationChapterTyp: String, CaseIterable {
-    case breathingCircles
+    case breathingAnimation
 }

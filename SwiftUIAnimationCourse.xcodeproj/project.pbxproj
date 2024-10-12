@@ -20,6 +20,8 @@
 		4118591D2CBAF05100EFBA1B /* ChapterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118591C2CBAF05100EFBA1B /* ChapterCardView.swift */; };
 		411859202CBAFA8400EFBA1B /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118591F2CBAFA8400EFBA1B /* AppRoute.swift */; };
 		411859222CBAFAB600EFBA1B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859212CBAFAB600EFBA1B /* AppRouter.swift */; };
+		411859262CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859252CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift */; };
+		411859282CBB107500EFBA1B /* BreathingAnimatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859272CBB107500EFBA1B /* BreathingAnimatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		4118591C2CBAF05100EFBA1B /* ChapterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCardView.swift; sourceTree = "<group>"; };
 		4118591F2CBAFA8400EFBA1B /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		411859212CBAFAB600EFBA1B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		411859252CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAnimationExampleView.swift; sourceTree = "<group>"; };
+		411859272CBB107500EFBA1B /* BreathingAnimatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAnimatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		4118590E2CBAE5F100EFBA1B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				411859232CBB0A2900EFBA1B /* Chaters */,
 				411858FE2CBAE37800EFBA1B /* HomeView.swift */,
 				411859182CBAEB0F00EFBA1B /* ChapterListView.swift */,
 				4118591A2CBAED9900EFBA1B /* ChapterViewFactory.swift */,
@@ -140,6 +145,23 @@
 				411859212CBAFAB600EFBA1B /* AppRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		411859232CBB0A2900EFBA1B /* Chaters */ = {
+			isa = PBXGroup;
+			children = (
+				411859242CBB0A4300EFBA1B /* BreathingViewAnimation */,
+			);
+			path = Chaters;
+			sourceTree = "<group>";
+		};
+		411859242CBB0A4300EFBA1B /* BreathingViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				411859252CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift */,
+				411859272CBB107500EFBA1B /* BreathingAnimatingView.swift */,
+			);
+			path = BreathingViewAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +241,8 @@
 				411858FF2CBAE37800EFBA1B /* HomeView.swift in Sources */,
 				411859122CBAE8D400EFBA1B /* AnimationChapterModel.swift in Sources */,
 				4118591B2CBAED9900EFBA1B /* ChapterViewFactory.swift in Sources */,
+				411859262CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift in Sources */,
+				411859282CBB107500EFBA1B /* BreathingAnimatingView.swift in Sources */,
 				411859222CBAFAB600EFBA1B /* AppRouter.swift in Sources */,
 				411859142CBAE93F00EFBA1B /* HomeViewModel.swift in Sources */,
 				411858FD2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift in Sources */,

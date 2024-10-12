@@ -18,9 +18,9 @@ extension AnimationChapterModel {
     static func allChapters() -> [AnimationChapterModel] {
         return [
             AnimationChapterModel(
-                type: .breathingCircles,
-                title: "Breathing circles",
-                description: "Breathing animation applied on color circles"),
+                type: .breathingAnimation,
+                title: "Breathing animation",
+                description: "Custom animation simulating the breathing in-out kind of animation"),
         ]
     }
 }
