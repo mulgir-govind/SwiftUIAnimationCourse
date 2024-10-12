@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject private var router: AppRouter
     @State private var viewModel = HomeViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.path) {
             ZStack {
                 LinearGradient(
                     colors: [.purple, .pink],
@@ -21,9 +22,14 @@ struct HomeView: View {
 
                 ScrollView {
                     // Chapter list
-                    ChapterListView(viewModel: viewModel.chapterListViewModel)
+                    ChapterListView(viewModel: viewModel.chapterListViewModel) { chapter in
+                        router.navigateToChapter(chapter)
+                    }
                 }
-                .navigationTitle("Animation examples")
+            }
+            .navigationTitle("Animation examples")
+            .navigationDestination(for: AppRoute.self) { route in
+                router.destinationView(for: route)
             }
         }
     }
@@ -31,4 +37,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject(AppRouter())
 }

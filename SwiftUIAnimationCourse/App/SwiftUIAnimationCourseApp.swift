@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUIAnimationCourseApp: App {
+    @State private var appRouter = AppRouter()
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(appRouter)
         }
     }
 }

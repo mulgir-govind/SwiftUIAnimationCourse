@@ -18,6 +18,8 @@
 		411859192CBAEB0F00EFBA1B /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859182CBAEB0F00EFBA1B /* ChapterListView.swift */; };
 		4118591B2CBAED9900EFBA1B /* ChapterViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118591A2CBAED9900EFBA1B /* ChapterViewFactory.swift */; };
 		4118591D2CBAF05100EFBA1B /* ChapterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118591C2CBAF05100EFBA1B /* ChapterCardView.swift */; };
+		411859202CBAFA8400EFBA1B /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118591F2CBAFA8400EFBA1B /* AppRoute.swift */; };
+		411859222CBAFAB600EFBA1B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859212CBAFAB600EFBA1B /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		411859182CBAEB0F00EFBA1B /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
 		4118591A2CBAED9900EFBA1B /* ChapterViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewFactory.swift; sourceTree = "<group>"; };
 		4118591C2CBAF05100EFBA1B /* ChapterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCardView.swift; sourceTree = "<group>"; };
+		4118591F2CBAFA8400EFBA1B /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		411859212CBAFAB600EFBA1B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		411858FB2CBAE37800EFBA1B /* SwiftUIAnimationCourse */ = {
 			isa = PBXGroup;
 			children = (
+				4118591E2CBAFA6700EFBA1B /* Router */,
 				4118590A2CBAE43900EFBA1B /* App */,
 				4118590C2CBAE5E400EFBA1B /* Models */,
 				4118590B2CBAE4C300EFBA1B /* SupportingFiles */,
@@ -126,6 +131,15 @@
 				4118591C2CBAF05100EFBA1B /* ChapterCardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4118591E2CBAFA6700EFBA1B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4118591F2CBAFA8400EFBA1B /* AppRoute.swift */,
+				411859212CBAFAB600EFBA1B /* AppRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +219,10 @@
 				411858FF2CBAE37800EFBA1B /* HomeView.swift in Sources */,
 				411859122CBAE8D400EFBA1B /* AnimationChapterModel.swift in Sources */,
 				4118591B2CBAED9900EFBA1B /* ChapterViewFactory.swift in Sources */,
+				411859222CBAFAB600EFBA1B /* AppRouter.swift in Sources */,
 				411859142CBAE93F00EFBA1B /* HomeViewModel.swift in Sources */,
 				411858FD2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift in Sources */,
+				411859202CBAFA8400EFBA1B /* AppRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

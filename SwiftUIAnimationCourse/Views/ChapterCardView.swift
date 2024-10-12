@@ -9,28 +9,32 @@ import SwiftUI
 
 struct ChapterCardView: View {
     let chapter: AnimationChapterModel
+    let onTap: () -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text(chapter.title)
-                    .font(.headline)
-                    .fontWeight(.bold)
-
-                Spacer()
-
-                Button(action: {}) {
-                    Image(systemName: "arrow.right")
-                        .foregroundColor(.blue)
-                        .padding(8)
-                        .background(Circle().fill(Color.white))
+        Button(action: onTap, label: {
+            VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Text(chapter.title)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                    
+                    Button(action: onTap) {
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.blue)
+                            .padding(8)
+                            .background(Circle().fill(Color.white))
+                            .shadow(radius: 4)
+                    }
                 }
+                
+                Text(chapter.description)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
             }
-
-            Text(chapter.description)
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-        }
+        })
         .padding()
         .background(Color(.systemBackground))
         .cornerRadius(10)
@@ -39,5 +43,8 @@ struct ChapterCardView: View {
 }
 
 #Preview {
-    ChapterCardView(chapter: AnimationChapterModel.allChapters().first!)
+    ChapterCardView(
+        chapter: AnimationChapterModel.allChapters().first!) {
+            print("Chapter card view tapped")
+        }
 }

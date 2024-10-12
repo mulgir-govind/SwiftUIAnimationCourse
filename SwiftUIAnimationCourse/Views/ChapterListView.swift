@@ -9,21 +9,22 @@ import SwiftUI
 
 struct ChapterListView: View {
     let viewModel: ChapterListViewModel
+    let onChapterSelected: (AnimationChapterModel) -> Void
     var body: some View {
         LazyVStack(spacing: 10) {
             ForEach(viewModel.chapters) { chapter in
-                NavigationLink(value: chapter) {
-                    ChapterCardView(chapter: chapter)
-                        .padding(.horizontal)
-                }
+                ChapterCardView(chapter: chapter, onTap: {
+                    onChapterSelected(chapter)
+                })
+                .padding(.horizontal)
             }
-        }
-        .navigationDestination(for: AnimationChapterModel.self) { chapter in
-            ChapterViewFactory.createView(for: chapter)
         }
     }
 }
 
 #Preview {
-    ChapterListView(viewModel: ChapterListViewModel())
+    ChapterListView(
+        viewModel: ChapterListViewModel()) { chapter in
+            print("Selected chapter: \(chapter.title)")
+        }
 }
