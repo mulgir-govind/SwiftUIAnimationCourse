@@ -22,6 +22,12 @@
 		411859222CBAFAB600EFBA1B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859212CBAFAB600EFBA1B /* AppRouter.swift */; };
 		411859262CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859252CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift */; };
 		411859282CBB107500EFBA1B /* BreathingAnimatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859272CBB107500EFBA1B /* BreathingAnimatingView.swift */; };
+		4118592B2CBB235900EFBA1B /* RecordPlayerAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118592A2CBB235900EFBA1B /* RecordPlayerAnimationExample.swift */; };
+		4118592E2CBB242C00EFBA1B /* RecordPlayerBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118592D2CBB242C00EFBA1B /* RecordPlayerBoxView.swift */; };
+		411859302CBB257A00EFBA1B /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118592F2CBB257A00EFBA1B /* RecordView.swift */; };
+		411859322CBB263400EFBA1B /* RecordArmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859312CBB263400EFBA1B /* RecordArmView.swift */; };
+		411859342CBB2B9E00EFBA1B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411859332CBB2B9E00EFBA1B /* AudioPlayer.swift */; };
+		411859352CBB2F8500EFBA1B /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4118592C2CBB23F100EFBA1B /* music.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,12 @@
 		411859212CBAFAB600EFBA1B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		411859252CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAnimationExampleView.swift; sourceTree = "<group>"; };
 		411859272CBB107500EFBA1B /* BreathingAnimatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingAnimatingView.swift; sourceTree = "<group>"; };
+		4118592A2CBB235900EFBA1B /* RecordPlayerAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerAnimationExample.swift; sourceTree = "<group>"; };
+		4118592C2CBB23F100EFBA1B /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
+		4118592D2CBB242C00EFBA1B /* RecordPlayerBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayerBoxView.swift; sourceTree = "<group>"; };
+		4118592F2CBB257A00EFBA1B /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		411859312CBB263400EFBA1B /* RecordArmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordArmView.swift; sourceTree = "<group>"; };
+		411859332CBB2B9E00EFBA1B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,7 @@
 		4118590B2CBAE4C300EFBA1B /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4118592C2CBB23F100EFBA1B /* music.m4a */,
 				411859022CBAE37A00EFBA1B /* Preview Content */,
 				411859002CBAE37A00EFBA1B /* Assets.xcassets */,
 			);
@@ -122,6 +135,7 @@
 			children = (
 				411859132CBAE93F00EFBA1B /* HomeViewModel.swift */,
 				411859152CBAE9E400EFBA1B /* ChapterListViewModel.swift */,
+				411859332CBB2B9E00EFBA1B /* AudioPlayer.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -150,6 +164,7 @@
 		411859232CBB0A2900EFBA1B /* Chaters */ = {
 			isa = PBXGroup;
 			children = (
+				411859292CBB233400EFBA1B /* RecordPlayerAnimation */,
 				411859242CBB0A4300EFBA1B /* BreathingViewAnimation */,
 			);
 			path = Chaters;
@@ -162,6 +177,17 @@
 				411859272CBB107500EFBA1B /* BreathingAnimatingView.swift */,
 			);
 			path = BreathingViewAnimation;
+			sourceTree = "<group>";
+		};
+		411859292CBB233400EFBA1B /* RecordPlayerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				4118592A2CBB235900EFBA1B /* RecordPlayerAnimationExample.swift */,
+				4118592D2CBB242C00EFBA1B /* RecordPlayerBoxView.swift */,
+				4118592F2CBB257A00EFBA1B /* RecordView.swift */,
+				411859312CBB263400EFBA1B /* RecordArmView.swift */,
+			);
+			path = RecordPlayerAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +250,7 @@
 			files = (
 				411859042CBAE37A00EFBA1B /* Preview Assets.xcassets in Resources */,
 				411859012CBAE37A00EFBA1B /* Assets.xcassets in Resources */,
+				411859352CBB2F8500EFBA1B /* music.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +264,15 @@
 				4118591D2CBAF05100EFBA1B /* ChapterCardView.swift in Sources */,
 				411859162CBAE9E400EFBA1B /* ChapterListViewModel.swift in Sources */,
 				411859192CBAEB0F00EFBA1B /* ChapterListView.swift in Sources */,
+				4118592B2CBB235900EFBA1B /* RecordPlayerAnimationExample.swift in Sources */,
 				411859102CBAE86E00EFBA1B /* AnimationChapterTyp.swift in Sources */,
+				411859302CBB257A00EFBA1B /* RecordView.swift in Sources */,
+				4118592E2CBB242C00EFBA1B /* RecordPlayerBoxView.swift in Sources */,
+				411859322CBB263400EFBA1B /* RecordArmView.swift in Sources */,
 				411858FF2CBAE37800EFBA1B /* HomeView.swift in Sources */,
 				411859122CBAE8D400EFBA1B /* AnimationChapterModel.swift in Sources */,
 				4118591B2CBAED9900EFBA1B /* ChapterViewFactory.swift in Sources */,
+				411859342CBB2B9E00EFBA1B /* AudioPlayer.swift in Sources */,
 				411859262CBB0A6100EFBA1B /* BreathingAnimationExampleView.swift in Sources */,
 				411859282CBB107500EFBA1B /* BreathingAnimatingView.swift in Sources */,
 				411859222CBAFAB600EFBA1B /* AppRouter.swift in Sources */,

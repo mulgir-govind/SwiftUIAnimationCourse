@@ -21,6 +21,11 @@ extension AnimationChapterModel {
                 type: .breathingAnimation,
                 title: "Breathing animation",
                 description: "Custom animation simulating the breathing in-out kind of animation"),
+            
+            AnimationChapterModel(
+                type: .recordPlayerAnimation,
+                title: "Record player animation",
+                description: "This animation demonstrate animating the parts of old record player")
         ]
     }
 }

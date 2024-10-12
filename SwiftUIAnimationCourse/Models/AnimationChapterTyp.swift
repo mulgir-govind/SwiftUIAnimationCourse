@@ -9,4 +9,5 @@ import Foundation
 
 enum AnimationChapterTyp: String, CaseIterable {
     case breathingAnimation
+    case recordPlayerAnimation
 }

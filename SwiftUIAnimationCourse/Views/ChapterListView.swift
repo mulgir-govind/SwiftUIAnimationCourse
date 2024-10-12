@@ -13,9 +13,9 @@ struct ChapterListView: View {
     var body: some View {
         LazyVStack(spacing: 10) {
             ForEach(viewModel.chapters) { chapter in
-                ChapterCardView(chapter: chapter, onTap: {
+                ChapterCardView(chapter: chapter) {
                     onChapterSelected(chapter)
-                })
+                }
                 .padding(.horizontal)
             }
         }

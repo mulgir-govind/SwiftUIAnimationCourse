@@ -13,6 +13,8 @@ class ChapterViewFactory {
         switch chapter.type {
             case .breathingAnimation:
                 BreathingAnimationExampleView()
+            case .recordPlayerAnimation:
+                RecordPlayerAnimationExample()
         }
     }
 }
