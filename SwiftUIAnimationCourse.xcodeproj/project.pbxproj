@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		411858FD2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411858FC2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift */; };
-		411858FF2CBAE37800EFBA1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411858FE2CBAE37800EFBA1B /* ContentView.swift */; };
+		411858FF2CBAE37800EFBA1B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411858FE2CBAE37800EFBA1B /* HomeView.swift */; };
 		411859012CBAE37A00EFBA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411859002CBAE37A00EFBA1B /* Assets.xcassets */; };
 		411859042CBAE37A00EFBA1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411859032CBAE37A00EFBA1B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		411858F92CBAE37800EFBA1B /* SwiftUIAnimationCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimationCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411858FC2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationCourseApp.swift; sourceTree = "<group>"; };
-		411858FE2CBAE37800EFBA1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		411858FE2CBAE37800EFBA1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		411859002CBAE37A00EFBA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		411859032CBAE37A00EFBA1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,10 +51,11 @@
 		411858FB2CBAE37800EFBA1B /* SwiftUIAnimationCourse */ = {
 			isa = PBXGroup;
 			children = (
-				411858FC2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift */,
-				411858FE2CBAE37800EFBA1B /* ContentView.swift */,
-				411859002CBAE37A00EFBA1B /* Assets.xcassets */,
-				411859022CBAE37A00EFBA1B /* Preview Content */,
+				4118590A2CBAE43900EFBA1B /* App */,
+				4118590C2CBAE5E400EFBA1B /* Models */,
+				4118590B2CBAE4C300EFBA1B /* SupportingFiles */,
+				4118590D2CBAE5EB00EFBA1B /* ViewModels */,
+				4118590E2CBAE5F100EFBA1B /* Views */,
 			);
 			path = SwiftUIAnimationCourse;
 			sourceTree = "<group>";
@@ -65,6 +66,45 @@
 				411859032CBAE37A00EFBA1B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4118590A2CBAE43900EFBA1B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				411858FC2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4118590B2CBAE4C300EFBA1B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				411859022CBAE37A00EFBA1B /* Preview Content */,
+				411859002CBAE37A00EFBA1B /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4118590C2CBAE5E400EFBA1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4118590D2CBAE5EB00EFBA1B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4118590E2CBAE5F100EFBA1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				411858FE2CBAE37800EFBA1B /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				411858FF2CBAE37800EFBA1B /* ContentView.swift in Sources */,
+				411858FF2CBAE37800EFBA1B /* HomeView.swift in Sources */,
 				411858FD2CBAE37800EFBA1B /* SwiftUIAnimationCourseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAnimationCourse/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAnimationCourse/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = FD8PNH493T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAnimationCourse/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAnimationCourse/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = FD8PNH493T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
