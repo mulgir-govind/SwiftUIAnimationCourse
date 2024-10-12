@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var viewModel = HomeViewModel()
+
     var body: some View {
-        ZStack {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+        NavigationStack {
+            ZStack {
+                LinearGradient(
+                    colors: [.purple, .pink],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing)
+                .ignoresSafeArea(.all)
+
+                ScrollView {
+                    // Chapter list
+                    ChapterListView(viewModel: viewModel.chapterListViewModel)
+                }
+                .navigationTitle("Animation examples")
             }
-            .padding()
         }
     }
 }
